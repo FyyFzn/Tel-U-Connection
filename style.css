@@ -1,0 +1,240 @@
+/* Reset dan font dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #8B0000;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+}
+
+.profile {
+    font-size: 1.4em;
+    display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-right: 150px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: #b30000;
+  color: white;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background: white;
+  color: #b30000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-text button:hover {
+  background: #f0f0f0;
+}
+
+.hero-img img {
+  width: 250px;
+}
+
+/* Konten utama */
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Daftar pertanyaan */
+.questions {
+  flex: 2;
+}
+
+.questions h3 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.question-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.question-card h4 {
+  color: #8B0000;
+  margin-bottom: 10px;
+}
+
+.question-card span {
+  font-size: 0.85em;
+  color: gray;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tags span {
+  background: #f3f3f3;
+  color: #8B0000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+  background: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.dropdown {
+  position: relative;
+  list-style: none;
+  padding-right: 100px;
+}
+
+.drop-btn {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.drop-btn:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  justify-content: center;
+}
+
+/* Show dropdown when checked */
+#menu-toggle:checked ~ .dropdown-content {
+  max-height: 400px;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: #8B0000;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background: #8B0000;
+  color: white;
+}
