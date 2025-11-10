@@ -1,14 +1,14 @@
-/* Reset dan font dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
+  padding: 0;
+  margin: 0;
   background: #f8f9fa;
   color: #333;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+header{
+  height: 70px;
 }
 
 /* Navbar */
@@ -71,9 +71,13 @@ body {
 
 /* Hero Section */
 .hero {
+  padding-top: 60px;
   background: #b30000;
   color: white;
-  padding: 60px 0;
+  justify-self: center;
+  height: 350px;
+  width: 900px;
+  border-radius: 3%;
 }
 
 .hero-content {
@@ -83,6 +87,22 @@ body {
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
+}
+
+.container-komunitas {
+  background: #b30000;
+  color: white;
+  justify-self: center;
+  height: 350px;
+  width: 900px;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.hero-komunitas {
+  text-align: center;
+  padding: 100px 20px;
+
 }
 
 .hero-text {
@@ -119,16 +139,15 @@ body {
 /* Konten utama */
 .content {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
   margin-top: 40px;
 }
 
 /* Daftar pertanyaan */
-.questions {
-  flex: 2;
-}
 
+
+.questions {
+  width: 800px;
+}
 .questions h3 {
     text-align: center;
     padding-bottom: 25px;
@@ -136,7 +155,9 @@ body {
 
 .question-card {
   background: white;
+  justify-self: center;
   padding: 15px;
+  width: 700px;
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -153,13 +174,15 @@ body {
 }
 
 /* Sidebar */
+
 .sidebar {
-  flex: 1;
+  margin-top: 45px;
   background: white;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 5%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   height: fit-content;
+  width: 300px;
 }
 
 .tags {
@@ -237,4 +260,21 @@ footer {
 .dropdown-content li a:hover {
   background: #8B0000;
   color: white;
+}
+
+.section{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.card{
+text-align: center;
+}
+
+.card img{
+  width: 50%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  
 }

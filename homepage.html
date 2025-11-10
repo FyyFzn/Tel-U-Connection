@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tel-U Connection</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
 </head>
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <h1 class="logo"><a href="#">Tel-U Connection</h1></a>
-      <ul class="nav-links">
-        <li><a href="#">Tel-U Ask</a></li>
-        <li><a href="#">Komunitas</a></li>
-      </ul>
-      <ul>
-       <li class="dropdown">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
-account_circle
-</span></label>
-          <ul class="dropdown-content">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Pengaturan</a></li>
-            <li><a href="#">Inbox</a></li>
-          </ul>
-        </li>
-      </ul>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="#">Tel-U Connection</h1></a>
+        <ul class="nav-links">
+          <li><a href="#">Tel-U Ask</a></li>
+          <li><a href="komunitas.html">Komunitas</a></li>
+        </ul>
+        <ul>
+          <li class="dropdown">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
+                account_circle
+              </span></label>
+            <ul class="dropdown-content">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Pengaturan</a></li>
+              <li><a href="#">Inbox</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div>
-  </nav>
-
+      </div>
+    </nav>
+  </header>
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -72,7 +76,7 @@ account_circle
     </section>
 
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <div class="sidebar">
       <h3>Tag Populer</h3>
       <div class="tags">
         <span>#KehidupanKampus</span>
@@ -81,7 +85,7 @@ account_circle
         <span>#Perkuliahan</span>
         <span>#TipsMahasiswa</span>
       </div>
-    </aside>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -89,4 +93,5 @@ account_circle
     <p>&copy; 2025 Tel-U Connection. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
