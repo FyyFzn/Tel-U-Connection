@@ -89,6 +89,22 @@ body {
   margin: auto;
 }
 
+.container-komunitas {
+  background: #b30000;
+  color: white;
+  justify-self: center;
+  height: 350px;
+  width: 900px;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.hero-komunitas {
+  text-align: center;
+  padding: 100px 20px;
+
+}
+
 .hero-text {
   max-width: 500px;
 }
@@ -244,4 +260,21 @@ footer {
 .dropdown-content li a:hover {
   background: #8B0000;
   color: white;
+}
+
+.section{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.card{
+text-align: center;
+}
+
+.card img{
+  width: 50%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  
 }
