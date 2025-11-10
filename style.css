@@ -1,14 +1,14 @@
-/* Reset dan font dasar */
-* {
-  margin: 0;
+body {
   padding: 0;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
   box-sizing: border-box;
   font-family:sans-serif;
 }
 
-body {
-  background: #f8f9fa;
-  color: #333;
+header{
+  height: 70px;
 }
 
 /* Navbar */
@@ -71,7 +71,7 @@ body {
 
 /* Hero Section */
 .hero {
-  
+  padding-top: 60px;
   background: #b30000;
   color: white;
   justify-self: center;
