@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tel-U Ask</title>
+  <link rel="stylesheet" href="coba.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+    <div class="navbar">
+      <div class="brand">
+        <span class="logo"></span>
+        <h1>Tel-U Connection</h1>
+      </div>
+      <nav>
+        <a href="#">Tel-U Ask</a>
+        <a href="#">Komunitas</a>
+      </nav>
+    </div>
+
+  <!--main-->
+  <main>
+    <section class="ask-section">
+      <h2>Ajukan Pertanyaan Baru</h2>
+      <textarea placeholder="Tulis pertanyaan Anda di sini..."></textarea>
+      <input type="text" placeholder="Tambahkan tag (mis: Matematika, Fisika, Algoritma)">
+      <button>Kirim Pertanyaan</button>
+    </section>
+
+    <section class="questions-section">
+      <div class="section-header">
+        <h2>Pertanyaan Terbaru</h2>
+        <div class="sort">
+          <button class="active">Terbaru</button>
+          <button>Populer</button>
+        </div>
+      </div>
+
+      <input type="text" class="search" placeholder="Cari pertanyaan...">
+
+        <div class="question-card">
+          <h3>Bagaimana cara melakukan deployment aplikasi React ke Vercel</h3>
+          <p class="author">Elora Kirana • 2 jam lalu</p>
+          <div class="tags">
+            <span>React</span><span>Deployment</span><span>Vercel</span>
+          </div>
+          <p class="answers">2 Jawaban</p>
+        </div>
+
+        <div class="question-card">
+          <h3>Rekomendasi buku atau sumber belajar untuk machine learning</h3>
+          <p class="author">Aluna Raina • 4 jam lalu</p>
+          <div class="tags">
+            <span>Machine Learning</span><span>Data Science</span>
+          </div>
+          <p class="answers">5 Jawaban</p>
+        </div>
+
+        <div class="question-card">
+          <h3>Apakah ada grup studi untuk persiapan Ujian Akhir Semester</h3>
+          <p class="author">Revan Arandika • 1 hari lalu</p>
+          <div class="tags">
+            <span>Algoritma</span><span>UAS</span><span>Grup Studi</span>
+          </div>
+          <p class="answers">3 Jawaban</p>
+        </div>
+    </section>
+  </main>
+
+  <!--footer-->
+  <footer>
+    <p>© 2025 Tel-U Connect. All rights reserved.</p>
+  </footer>
+</body>
+</html>
