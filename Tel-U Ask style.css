@@ -12,13 +12,34 @@ body {
 }
 
 /* Navbar */
+header{
+  height: 70px;
+}
+
+/* Navbar */
 .navbar {
+  background: #8B0000;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  background-color: #8b0000;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
   color: white;
-  padding: 1rem 2rem;
 }
 
 .logo {
@@ -43,6 +64,42 @@ body {
 
 .navbar nav a:hover {
   text-decoration: underline;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-right: 150px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+}
+
+.profile {
+    font-size: 1.4em;
+    display: flex;
 }
 
 .avatar {

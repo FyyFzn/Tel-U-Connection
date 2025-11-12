@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tel-U Ask</title>
+  <title>Tel - U Connection - Tel-U Ask</title>
   <link rel="stylesheet" href="Tel-U Ask style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
-    <div class="navbar">
-      <div class="brand">
-        <span class="logo"></span>
-        <h1>Tel-U Connection</h1>
+    <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="#">Tel-U Connection</h1></a>
+        <ul class="nav-links">
+          <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+          <li><a href="komunitas.html">Komunitas</a></li>
+        </ul>
+        <ul>
+          <li class="dropdown">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
+                account_circle
+              </span></label>
+            <ul class="dropdown-content">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Pengaturan</a></li>
+              <li><a href="#">Inbox</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <nav>
-        <a href="#">Tel-U Ask</a>
-        <a href="#">Komunitas</a>
-      </nav>
-    </div>
+    </nav>
+  </header>
 
   <!--main-->
   <main>

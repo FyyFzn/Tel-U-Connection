@@ -68,6 +68,75 @@ header{
 .nav-links a:hover {
   text-decoration: underline;
 }
+/*Dropdown menu*/
+.dropdown {
+  position: relative;
+  list-style: none;
+  padding-right: 100px;
+}
+
+.drop-btn {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.drop-btn:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none;
+  
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: -75px;
+  background: white;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  justify-content: center;
+}
+
+#menu-toggle:checked ~ .dropdown-content {
+  max-height: 400px;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: #8B0000;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background: #8B0000;
+  color: white;
+}
+
+.section{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.card{
+text-align: center;
+}
+
+.card img{
+  width: 50%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  
+}
 
 /* Hero Section */
 .hero {
@@ -210,71 +279,3 @@ footer {
   font-size: 0.9em;
 }
 
-.dropdown {
-  position: relative;
-  list-style: none;
-  padding-right: 100px;
-}
-
-.drop-btn {
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.drop-btn:hover {
-  text-decoration: underline;
-}
-
-#menu-toggle {
-  display: none
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  background: white;
-  min-width: 180px;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  list-style: none;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
-  justify-content: center;
-}
-
-/* Show dropdown when checked */
-#menu-toggle:checked ~ .dropdown-content {
-  max-height: 400px;
-}
-
-.dropdown-content li a {
-  display: block;
-  color: #8B0000;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-.dropdown-content li a:hover {
-  background: #8B0000;
-  color: white;
-}
-
-.section{
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-}
-
-.card{
-text-align: center;
-}
-
-.card img{
-  width: 50%;
-  height: 200px;
-  border-radius: 8px 8px 0px 0px;
-  
-}
