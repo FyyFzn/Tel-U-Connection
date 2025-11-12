@@ -139,28 +139,3 @@ body {
   font-weight: 600;
   color: #8b0000;
 }
-
-/* Footer */
-footer {
-  background: #8B0000;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-
-footer .links {
-  margin-top: 0.5rem;
-}
-
-footer .links a {
-  color: #6b7280;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-footer .links a:hover {
-  text-decoration: underline;
-}
