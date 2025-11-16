@@ -127,119 +127,6 @@ header{
   color: white;
 }
 
-/* Hero Section */
-.hero {
-  padding-top: 60px;
-  background: #b30000;
-  color: white;
-  justify-self: center;
-  height: 350px;
-  width: 900px;
-  border-radius: 3%;
-}
-
-.hero-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-}
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-}
-
-.hero-text p {
-  margin-bottom: 20px;
-}
-
-.hero-text .button {
-  background: white;
-  color: #b30000;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.hero-text .button:hover {
-  background: #f0f0f0;
-}
-
-.hero-img img {
-  width: 250px;
-}
-
-/* Konten utama */
-.content {
-  display: flex;
-  margin-top: 40px;
-}
-
-/* Daftar pertanyaan homepage*/
-.questions {
-  width: 800px;
-}
-.questions h3 {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.question-card {
-  background: white;
-  justify-self: center;
-  padding: 15px;
-  width: 700px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.question-card h4 {
-  color: #8B0000;
-  margin-bottom: 10px;
-}
-
-.question-card span {
-  font-size: 0.85em;
-  color: gray;
-}
-
-/* Tag Populer */
-
-.kategori {
-  margin-top: 45px;
-  background: white;
-  padding: 15px;
-  border-radius: 5%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  height: fit-content;
-  width: 300px;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.tags span {
-  background: #f3f3f3;
-  color: #8B0000;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.9em;
-}
-
 /* Footer */
 footer {
   background: #8B0000;
@@ -248,4 +135,95 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
   font-size: 0.9em;
+}
+
+
+/* Hero Komunitas */
+
+.container-komunitas {
+  background: #b30000;
+  color: white;
+  justify-self: center;
+  height: 200px;
+  width: 900px;
+  border-radius: 3%;
+}
+
+.hero-komunitas {
+  justify-content: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+/*card*/
+
+h2{
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+.card-container {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.kartu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+/* Gambar card */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: fill;
+}
+
+/* Judul */
+.card h3 {
+    margin: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Paragraf */
+.card p {
+    margin: 0 15px 20px 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Button */
+.card button {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #ddd;
+}
+
+.card .btn-link{
+  text-decoration: none;
 }
