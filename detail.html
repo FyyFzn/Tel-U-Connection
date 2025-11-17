@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tel-U Ask - Question Detail</title>
+  <link rel="stylesheet" href="detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+   <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="#">Tel-U Connection</h1></a>
+        <ul class="nav-links">
+          <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+          <li><a href="komunitas.html">Komunitas</a></li>
+        </ul>
+        <ul>
+          <li class="dropdown">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
+                account_circle
+              </span></label>
+            <ul class="dropdown-content">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Pengaturan</a></li>
+              <li><a href="#">Inbox</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <section class="question-detail">
+      <h1>Strategi Efektif untuk Manajemen Proyek Jarak Jauh dengan Miro</h1>
+      <div class="author">
+        <img src="foto cwok2.jpeg" alt="user">
+        <div>
+          <p><strong>Arsen Valerio</strong> • 2 hari yang lalu</p>
+          <p class="role">Manajemen Proyek</p>
+        </div>
+      </div>
+
+      <p class="question-text">
+        Saya sedang mengerjakan sebuah proyek dan menghadapi masalah dengan integrasi API pihak ketiga. 
+        Ada yang pernah mengalaminya juga? Pertanyaannya begini: Saya juga sempat kesulitan dengan IPs. 
+        Pastikan Anda memeriksa dokumentasi otentikasi dengan cermat dan konfigurasi firewall Anda. 
+        Beberapa API memerlukan aturan CORS spesifik. Apakah ada cara yang lebih efisien untuk mengelola 
+        tugas proyek di Miro? Kami saat ini menggunakan papan Kanban, tetapi sepertinya ada ruang untuk 
+        perbaikan dalam pelacakan kemajuan dan delegasi tugas.
+      </p>
+
+      <div class="tags">
+        <span>Manajemen Proyek</span>
+        <span>Kolaborasi</span>
+        <span>Tim Jarak Jauh</span>
+      </div>
+
+      <div class="question-actions">
+        <p>5 Jawaban</p>
+        <div class="btn-group">
+          <button class="edit">Edit Pertanyaan</button>
+          <button class="report">Laporkan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM JAWABAN -->
+    <section class="answer-form">
+      <h2>Tambah Jawaban Baru</h2>
+      <textarea placeholder="Tulis jawaban Anda di sini..."></textarea>
+      <button class="submit-btn">Kirim Jawaban</button>
+    </section>
+
+    <!-- DAFTAR JAWABAN -->
+    <section class="answers">
+      <h2>Daftar Jawaban (3)</h2>
+
+      <div class="answer">
+        <img src="foto cwek 1.jpeg" alt="user">
+        <div>
+          <p><strong>Ayora Quinn</strong> • 1 hari yang lalu</p>
+          <p class="text">
+            Saya sedang mengalami kendala saat mengintegrasikan API pihak ketiga.
+            Ada yang pernah menghadapi hal serupa? Pastikan untuk memeriksa ulang 
+            autentikasi dan pengaturan firewall.
+          </p>
+          <p class="votes">3 jawaban</p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <img src="foto cwok 1.jpeg" alt="user">
+        <div>
+          <p><strong>Zavian Elwyn</strong> • 23 jam yang lalu</p>
+          <p class="text">
+            Gunakan Miro untuk membagi papan kerja sesuai fase proyek, dan gunakan komentar sticky note 
+            agar setiap anggota tim bisa memberi update tanpa perlu rapat panjang.
+          </p>
+          <p class="votes">5 jawaban</p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <img src="foto cwek 2.jpeg" alt="user">
+        <div>
+          <p><strong>Selina Mirel</strong> • 15 jam yang lalu</p>
+          <p class="text">
+            Kami biasanya memanfaatkan integrasi Miro dengan Slack, supaya setiap perubahan di papan langsung 
+            dikirim ke channel proyek.
+          </p>
+          <p class="votes">4 jawaban</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 Tel-U Connection. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
