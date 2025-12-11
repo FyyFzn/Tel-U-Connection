@@ -181,13 +181,14 @@ header{
 /* Konten utama */
 .content {
   display: flex;
-  margin-top: 40px;
+  justify-content: center; /* ⬅️ TAMBAHAN */
+  gap: 40px;
 }
 
 /* Daftar pertanyaan homepage*/
 .questions {
-  width: 800px;
 }
+
 .questions h3 {
     text-align: center;
     padding-bottom: 25px;
@@ -195,12 +196,16 @@ header{
 
 .question-card {
   background: white;
-  justify-self: center;
+  border-radius: 10px;
   padding: 15px;
+  margin-bottom: 15px;
   width: 700px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-4px);
 }
 
 .question-card h4 {
@@ -212,6 +217,22 @@ header{
   font-size: 0.85em;
   color: gray;
 }
+
+.question-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.question-card {
+  cursor: pointer; /* ⬅️ TAMBAHAN */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 
 /* Tag Populer */
 

@@ -124,13 +124,13 @@ body {
   color: white;
 }
 
-.container {
-  width: 85%;
-  max-width: 900px;
+/* QUESTION DETAIL */
+.container-question {
+width: 85%;
+max-width: 900px;
   margin: 30px auto;
 }
 
-/* QUESTION DETAIL */
 .question-detail {
   background-color: white;
   padding: 25px;
