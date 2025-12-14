@@ -1,0 +1,23 @@
+
+/* SEARCH PAGE */
+.search-title {
+  margin: 20px;
+}
+
+.result-list {
+  width: 80%;
+  margin: auto;
+}
+
+.question-card {
+  background: white;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.question-card:hover {
+  background: #f9f9f9;
+}

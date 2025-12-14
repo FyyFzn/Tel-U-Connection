@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+  font-family:sans-serif;
+}
+
+header{
+  height: 100px;
+}
+
+/* Navbar */
+.navbar {
+  background: #8B0000;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+}
+
+.profile {
+    font-size: 1.4em;
+    display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-right: 150px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.search-box {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/*Dropdown menu*/
+.dropdown {
+  position: relative;
+  list-style: none;
+  padding-right: 100px
+}
+
+.drop-btn {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.drop-btn:hover {
+  text-decoration: underline;
+}
+
+#menu-toggle {
+  display: none;
+  
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: -75px;
+  background: white;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  justify-content: center;
+}
+
+#menu-toggle:checked ~ .dropdown-content {
+  max-height: 300px;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: #8B0000;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.dropdown-content li :hover {
+  background: #8B0000;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
