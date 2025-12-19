@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+/* Hero */
+#heroSection {
+  position: relative;
+  color: #ffffff;
+  min-height: 180px;
+  padding: 24px 0;
+}
+
+#heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+#namaFakultas {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+#namaProdi {
+  font-size: 26px;
+  margin: 4px 0;
+}
+
+#jenjangProdi {
+  font-size: 16px;
+  margin: 4px 0 8px 0;
+}
+
+#taglineProdi {
+  max-width: 600px;
+  font-size: 14px;
+}
+
+#subscribeProdiBtn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+}
+
+#subscribeProdiBtn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Layout utama */
+main {
+  padding: 24px 0;
+}
+
+.grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.col-2 {
+  flex: 2 1 60%;
+}
+
+.col-1 {
+  flex: 1 1 30%;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.card h3 {
+  margin: 10px 0 4px 0;
+  font-size: 14px;
+}
+
+.card p,
+.card li,
+.card span {
+  font-size: 13px;
+  color: #444;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 4px 0;
+}
+
+
+/* Link website prodi */
+#websiteProdi {
+  color: #0056b3;
+  cursor: pointer;
+}
