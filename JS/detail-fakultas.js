@@ -59,7 +59,8 @@ if (fakultasData[id]) {
   const heroSection = document.getElementById("heroSection");
   if (heroSection && data.colors) {
     const [c1, c2, c3] = data.colors;
-    heroSection.style.backgroundImage = `linear-gradient(to right, ${c1}, ${c2}, ${c3})`;
+    heroSection.style.backgroundImage =
+      `linear-gradient(to right, ${c1}, ${c2}, ${c3})`;
     heroSection.style.position = "relative";
     heroSection.style.minHeight = "300px";
     heroSection.style.overflow = "hidden";
@@ -84,10 +85,10 @@ if (fakultasData[id]) {
     heroContent.style.zIndex = "2";
   }
 
-  // Tombol subscribe di hero (pastikan ada <button id="subscribeBtn"> di HTML)
+  // Tombol subscribe di hero (pastikan ada di HTML)
   const subscribeBtn = document.getElementById("subscribeBtn");
   if (subscribeBtn) {
-    // Posisi di pojok kanan bawah hero, masih di dalam background hijau
+    // Posisi di pojok kanan bawah hero, masih di dalam background
     const parent = subscribeBtn.parentElement;
     if (parent) {
       parent.style.position = "absolute";
@@ -110,25 +111,27 @@ if (fakultasData[id]) {
     });
   }
 
-// List prodi
-const prodiList = document.getElementById("prodiList");
+  // List prodi (BAGIAN YANG DIGANTI → kirim juga fakultas)
+  const prodiList = document.getElementById("prodiList");
+  if (prodiList) {
+    data.prodi.forEach((prodi, index) => {
+      const li = document.createElement("li");
 
-if (prodiList) {
-  data.prodi.forEach((prodi, index) => {
-    const li = document.createElement("li");
+      // Buat link ke halaman detail-prodi.html
+      const link = document.createElement("a");
+      link.textContent = prodi;
 
-    // Buat link ke halaman detail-prodi.html
-    const link = document.createElement("a");
-    link.textContent = prodi;
-    // index di sini harus sama dengan id di array prodiData pada detail-prodi.js
-    link.href = `detail-prodi.html?id=${encodeURIComponent(index)}`;
-    link.style.textDecoration = "none";
-    link.style.color = "inherit";
-    link.style.cursor = "pointer";
+      // index di sini harus sama dengan id di array prodiData pada detail-prodi.js
+      // kirim fakultas + id prodi
+      link.href =
+        `detail-prodi.html?fakultas=${encodeURIComponent(id)}&id=${encodeURIComponent(index)}`;
 
-    li.appendChild(link);
-    prodiList.appendChild(li);
-  });
-}
+      link.style.textDecoration = "none";
+      link.style.color = "inherit";
+      link.style.cursor = "pointer";
 
+      li.appendChild(link);
+      prodiList.appendChild(li);
+    });
+  }
 }

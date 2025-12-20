@@ -1,55 +1,39 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Detail Program Studi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/detail-prodi.css" />
+  <link rel="stylesheet" href="css/detail-prodi.css">
 </head>
 <body>
-
   <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="container">
-  <!--Logo-->
-        <h1 class="logo"><a href="homepage.html">Tel-U Connection</h1></a>
-  <!--Menu-->
+        <h1 class="logo"><a href="homepage.html">Tel-U Connection</a></h1>
+
         <ul class="nav-links">
-          <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+          <li><a href="Tel-U-Ask.html">Tel-U Ask</a></li>
           <li><a href="fakulltas.html">Fakultas</a></li>
           <li><a href="UKM.html">UKM</a></li>
         </ul>
-        <!-- Search -->
-      <form action="search.html" method="GET" class="search-box">
-        <input type="text" name="q" placeholder="Cari pertanyaan..." required>
-        <button type="submit">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </form>
-  
-  <!-- Profile-->
-        <ul>
-          <li class="dropdown">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
-                account_circle
-              </span></label>
-            <ul class="dropdown-content">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Pengaturan</a></li>
-              <li><a href="#">Inbox</a></li>
-            </ul>
-          </li>
-        </ul>
+
+        <form action="search.html" method="GET" class="search-box">
+          <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+          <button type="submit">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form>
       </div>
     </nav>
   </header>
 
   <!-- Hero -->
   <section id="heroSection">
-    <img id="heroImage" src="media/FIT.png" alt="Hero Prodi" />
+    <img id="heroImage" src="media/FIT.png" alt="Hero Prodi">
     <div class="hero-content">
       <p id="namaFakultas"></p>
       <h1 id="namaProdi"></h1>
@@ -87,10 +71,10 @@
       <aside class="col-1">
         <div class="card">
           <h2>Info Singkat</h2>
-          <p><span>Jenjang:</span> <span id="jenjangProdiSide"></span></p>
-          <p><span>Gelar Lulusan:</span> <span id="gelarProdi"></span></p>
-          <p><span>Akreditasi:</span> <span id="akreditasiProdi"></span></p>
-          <p><span>Durasi Studi:</span> <span id="durasiProdi"></span></p>
+          <p><span>Jenjang</span> : <span id="jenjangProdiSide"></span></p>
+          <p><span>Gelar Lulusan</span> : <span id="gelarProdi"></span></p>
+          <p><span>Akreditasi</span> : <span id="akreditasiProdi"></span></p>
+          <p><span>Durasi Studi</span> : <span id="durasiProdi"></span></p>
         </div>
 
         <div class="card">
@@ -103,7 +87,7 @@
   </main>
 
   <footer>
-    <p>&copy 2025 Tel-U Connection. All Rights Reserved.</p>
+    <p>copy 2025 Tel-U Connection. All Rights Reserved.</p>
   </footer>
 
   <script src="JS/detail-prodi.js"></script>
