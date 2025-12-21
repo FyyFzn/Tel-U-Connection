@@ -130,8 +130,31 @@ header{
   justify-content: center;
 }
 
-#menu-toggle:checked ~ .dropdown-content {
-  max-height: 300px;
+/* Dropdown umum */
+.dropdown {
+  position: relative;
+  list-style: none;
+}
+
+.drop-btn {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 35px;
+  left: -75px;
+  background: white;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  justify-content: center;
 }
 
 .dropdown-content li a {
@@ -141,10 +164,49 @@ header{
   text-decoration: none;
 }
 
-.dropdown-content li :hover {
+.dropdown-content li:hover {
   background: #8B0000;
   color: white;
 }
+
+/* Toggle dropdown desktop */
+#profile-toggle-desktop {
+  display: none;
+}
+
+#profile-toggle-desktop:checked ~ .dropdown-content {
+  max-height: 300px;
+}
+
+/* Di mobile sidebar: dropdown diletakkan statis, tapi tetap pakai toggle sendiri */
+@media (max-width: 768px) {
+  .mobile-nav .dropdown {
+    position: static;
+  }
+
+  .mobile-nav .dropdown-content {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 10px;
+    max-height: 0;
+  }
+
+  .mobile-nav .dropdown-content li a {
+    color: #fff;
+    padding: 4px 0;
+  }
+
+  #profile-toggle-mobile {
+    display: none;
+  }
+
+  #profile-toggle-mobile:checked ~ .dropdown-content {
+    max-height: 200px;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -155,3 +217,154 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
+
+/* Icon menu (hamburger) untuk mobile */
+.menu-icon {
+  display: none;
+  font-size: 1.8em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Sidebar mobile (awal: nonaktif) */
+.mobile-nav {
+  display: none;
+}
+
+/* Sembunyikan checkbox toggle */
+#menu-toggle {
+  display: none;
+}
+
+/* Untuk dropdown profile di mobile */
+#profile-toggle {
+  display: none;
+}
+
+/* ========== MODE MOBILE: NAVBAR JADI SIDEBAR ========== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar .container {
+    width: 92%;
+    justify-content: space-between;
+  }
+
+  /* Tampilkan icon menu, sembunyikan nav desktop */
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links,
+  .search-box,
+  header .dropdown {   /* dropdown profile di desktop */
+    display: none;
+  }
+
+  /* Sidebar mobile */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -260px;               /* tersembunyi */
+    width: 240px;
+    height: 100vh;
+    background: #8B0000;
+    color: #fff;
+    padding: 70px 16px 16px;    /* 70px = tinggi navbar */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .mobile-nav .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .mobile-nav .nav-links a {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .mobile-nav .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-nav .search-box {
+    display: flex;
+    margin-top: 8px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: #fff;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .mobile-nav .search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+  }
+
+  .mobile-nav .search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Profile dropdown di sidebar */
+  .mobile-nav .dropdown {
+    list-style: none;
+  }
+
+  .mobile-nav .drop-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .mobile-nav .dropdown-content {
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 10px;
+  }
+
+  .mobile-nav .dropdown-content li a {
+    display: block;
+    color: #fff;
+    padding: 4px 0;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+
+  /* Toggle buka sidebar */
+  #menu-toggle:checked ~ .mobile-nav {
+    left: 0;
+  }
+
+  /* Toggle buka dropdown profile di mobile */
+  #profile-toggle:checked ~ .dropdown-content {
+    max-height: 200px;
+  }
+}
+
+
+
+
+

@@ -98,3 +98,70 @@
     list-style: none;
 
 }
+
+@media (max-width: 768px) {
+  /* Hero mirip pola homepage */
+  .hero {
+    height: auto;
+    padding: 80px 16px 24px; /* turun dari bawah navbar */
+  }
+
+  .hero-content {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content .sub {
+    font-size: 0.95em;
+  }
+
+  .hero-subscribe {
+    position: static;
+    margin-top: 16px;
+  }
+
+  #subscribeBtn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  /* Konten utama jadi kolom */
+  .konten {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .logo-box {
+    text-align: center;
+  }
+
+  .logo-box img {
+    max-width: 140px;
+    margin: 0 auto 12px;
+  }
+
+  .prodiList {
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .prodiList h3 {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .prodiList ul {
+    padding-left: 16px;
+  }
+
+  .prodiList ul li {
+    font-size: 0.9em;
+    padding-bottom: 6px;
+  }
+}

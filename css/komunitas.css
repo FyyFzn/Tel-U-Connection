@@ -87,3 +87,89 @@ h2{
 .card .btn-link{
   text-decoration: none;
 }
+
+/* ========== RESPONSIVE KOMUNITAS (MOBILE) ========== */
+@media (max-width: 768px) {
+  /* Hero komunitas jadi full width & lebih rendah */
+  .container-komunitas {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 40px 16px 24px;
+  }
+
+  .hero-komunitas {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .hero-komunitas h1,
+  .hero-komunitas p {
+    padding: 0 8px;
+    font-size: 0.95em;
+  }
+
+  /* Judul section */
+  h2 {
+    padding-top: 20px;
+    font-size: 1.2em;
+  }
+
+  /* Kontainer kartu lebih rapat dan ada padding samping */
+  .card-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+
+  /* Kartu ditumpuk vertikal, lebar penuh */
+  .kartu {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .card img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin: 12px 12px 8px 12px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    margin: 0 12px 16px 12px;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  .card button {
+    width: 92%;
+    padding: 8px 0;
+    font-size: 0.9em;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .card img {
+    height: 160px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 0.85em;
+  }
+}

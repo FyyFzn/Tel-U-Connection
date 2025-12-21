@@ -7,7 +7,7 @@
   <title>Tel-U Connection</title>
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/homepage.css">
-  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
 </head>
 
@@ -16,29 +16,35 @@
   <header>
     <nav class="navbar">
       <div class="container">
-  <!--Logo-->
+        <!--Logo-->
         <h1 class="logo"><a href="homepage.html">Tel-U Connection</h1></a>
-  <!--Menu-->
+
+        <!-- Toggle untuk mobile -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="material-symbols-outlined">menu</span>
+        </label>
+        <!--Menu-->
         <ul class="nav-links">
           <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
           <li><a href="fakulltas.html">Fakultas</a></li>
           <li><a href="UKM.html">UKM</a></li>
         </ul>
         <!-- Search -->
-      <form action="search.html" method="GET" class="search-box">
-        <input type="text" name="q" placeholder="Cari pertanyaan..." required>
-        <button type="submit">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </form>
-  
-  <!-- Profile-->
+        <form action="search.html" method="GET" class="search-box">
+          <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+          <button type="submit">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form>
+
+        <!-- Profile-->
         <ul>
           <li class="dropdown">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
-                account_circle
-              </span></label>
+            <input type="checkbox" id="profile-toggle-desktop">
+            <label for="profile-toggle-desktop" class="drop-btn">
+              <span class="material-symbols-outlined">account_circle</span>
+            </label>
             <ul class="dropdown-content">
               <li><a href="#">Profile</a></li>
               <li><a href="#">Pengaturan</a></li>
@@ -46,9 +52,43 @@
             </ul>
           </li>
         </ul>
+
+
+
+        <!-- Sidebar mobile -->
+        <div class="mobile-nav">
+          <ul class="nav-links">
+            <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+            <li><a href="fakulltas.html">Fakultas</a></li>
+            <li><a href="UKM.html">UKM</a></li>
+          </ul>
+
+          <form action="search.html" method="GET" class="search-box">
+            <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+            <button type="submit">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </form>
+
+          <ul>
+            <li class="dropdown">
+              <label for="profile-toggle" class="drop-btn">
+                <span class="material-symbols-outlined">account_circle</span>
+              </label>
+              <input type="checkbox" id="profile-toggle">
+              <ul class="dropdown-content">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Pengaturan</a></li>
+                <li><a href="#">Inbox</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </header>
+
   <!-- Hero Section -->
   <div class="hero">
     <div class="hero-content">
@@ -69,13 +109,14 @@
       <h3>Pertanyaan Terbaru</h3>
 
       <a href="detail.html" class="question-link">
-      <div class ="question-card"> 
-        <h4>Bagaimana cara bergabung dengan UKM di Tel-U?</h4>
-        <p>Jawaban terbaik: Hubungi ketua UKM terkait melalui website resmi kampus atau booth saat Open Recruitment.</p>
-        <span>Diposting oleh <b>@mhs2023</b></span>
-      </div>
+        <div class="question-card">
+          <h4>Bagaimana cara bergabung dengan UKM di Tel-U?</h4>
+          <p>Jawaban terbaik: Hubungi ketua UKM terkait melalui website resmi kampus atau booth saat Open Recruitment.
+          </p>
+          <span>Diposting oleh <b>@mhs2023</b></span>
+        </div>
       </a>
-      
+
       <div class="question-card">
         <h4>Apakah Tel-U menyediakan beasiswa internal?</h4>
         <p>Ya, terdapat beberapa jenis beasiswa seperti prestasi akademik dan non-akademik.</p>

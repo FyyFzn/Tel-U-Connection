@@ -141,3 +141,73 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 80px 16px 24px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4em;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+  }
+
+  .hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .hero-img img {
+    width: 160px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .questions {
+    width: 100%;
+  }
+
+  .question-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .kategori {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 12px;
+  }
+
+  .tags {
+    gap: 8px;
+  }
+
+  .tags span {
+    font-size: 0.8em;
+    padding: 4px 8px;
+  }
+}

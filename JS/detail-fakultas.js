@@ -6,6 +6,7 @@ const fakultasData = {
     gambar: "media/TU-logogram-238x300.jpg",
     hero: "media/FIT.png",
     deskripsi: "Fakultas Ilmu Terapan fokus pada pendidikan vokasi dan praktik industri.",
+    visiMisi: "Menjadi fakultas vokasi unggul dalam riset terapan dan kewirausahaan pada tahun 2023 yang berperan aktif dalam pengembangan teknologi terapan, manajemen dan pariwisata berbasis teknologi informasi.",
     colors: ["#18a63a", "#47c95a", "#a6e86f"],
     prodi: [
       "D3 Sistem Informasi",
@@ -19,6 +20,7 @@ const fakultasData = {
     gambar: "media/TU-logogram-238x300.jpg",
     hero: "media/Informatika.png",
     deskripsi: "Fakultas Informatika berfokus pada pengembangan teknologi dan IT.",
+    visiMisi:"wewewe",
     colors: ["#b91c1c", "#f97316", "#b91c1c"],
     prodi: [
       "S1 Informatika",
@@ -32,6 +34,7 @@ const fakultasData = {
     gambar: "media/TU-logogram-238x300.jpg",
     hero: "media/FEB.png",
     deskripsi: "FEB membekali mahasiswa dengan kompetensi bisnis dan manajemen.",
+    visiMisi: "wowowo",
     colors: ["#1d4ed8", "#3b82f6", "#1d4ed8"],
     prodi: [
       "S1 Manajemen",
@@ -54,6 +57,7 @@ if (fakultasData[id]) {
   document.getElementById("subTitle").textContent = data.subTitle || "";
   document.getElementById("gambarFakultas").src = data.gambar;
   document.getElementById("deskripsiFakultas").textContent = data.deskripsi;
+  document.getElementById("visiMisi").textContent = data.visiMisi;
 
   // Hero section
   const heroSection = document.getElementById("heroSection");
