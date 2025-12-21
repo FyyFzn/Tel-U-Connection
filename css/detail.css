@@ -1,129 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
-  padding:0;
-  background-color: #f5f5fa;
-  color: #333;
-  padding-top:50px;
-}
-
-.navbar {
-  background: #8B0000;
-  color: #fff;
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-}
-
-.navbar img {
-    height: 50px;
-}
-
-.logo {
-  font-size: 1.4em;
-  font-weight: bold;
-  display: flex;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.logo a:hover{
-    text-decoration: underline;
-}
-
-.profile {
-    font-size: 1.4em;
-    display: flex;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding-right: 150px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-/*Dropdown menu*/
-.dropdown {
-  position: relative;
-  list-style: none;
-  padding-right: 100px
-}
-
-.drop-btn {
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.drop-btn:hover {
-  text-decoration: underline;
-}
-
-#menu-toggle {
-  display: none;
-  
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 35px;
-  left: -75px;
-  background: white;
-  width: 150px;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  list-style: none;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  justify-content: center;
-}
-
-#menu-toggle:checked ~ .dropdown-content {
-  max-height: 300px;
-}
-
-.dropdown-content li a {
-  display: block;
-  color: #8B0000;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-.dropdown-content li :hover {
-  background: #8B0000;
-  color: white;
-}
-
 /* QUESTION DETAIL */
 .container-question {
 width: 85%;
@@ -152,10 +26,10 @@ max-width: 900px;
 }
 
 .author img {
-  width: 50px;              /* ukuran sama untuk lebar dan tinggi */
+  width: 50px;              
   height: 50px;
-  border-radius: 50%;       /* bikin bulat sempurna */
-  object-fit: cover;        /* potong gambar biar nggak gepeng */
+  border-radius: 50%;       
+  object-fit: cover;        
   flex-shrink: 0;
 }
 
@@ -253,10 +127,10 @@ max-width: 900px;
 }
 
 .answer img {
-  width: 50px;              /* ukuran sama untuk lebar dan tinggi */
+  width: 50px;              
   height: 50px;
-  border-radius: 50%;       /* bikin bulat sempurna */
-  object-fit: cover;        /* potong gambar biar nggak gepeng */
+  border-radius: 50%;       
+  object-fit: cover;        
   flex-shrink: 0;
 }
 
@@ -275,28 +149,4 @@ max-width: 900px;
   font-size: 13px;
   color: #555;
   margin-top: 5px;
-}
-
-/* FOOTER */
-footer {
-  background: #8B0000;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-footer .links {
-  margin-top: 0.5rem;
-}
-
-footer .links a {
-  color: #6b7280;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-footer .links a:hover {
-  text-decoration: underline;
 }
