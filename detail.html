@@ -9,34 +9,73 @@
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
+
 <body>
   <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="container">
-  <!--Logo-->
-        <h1 class="logo"><a href="homepage.html">Tel-U Connection</h1></a>
-  <!--Menu-->
-        <ul class="nav-links">
-          <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
-          <li><a href="fakulltas.html">Fakultas</a></li>
-          <li><a href="UKM.html">UKM</a></li>
-        </ul>
-        <!-- Search -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <h1 class="logo">
+        <a href="homepage.html">Tel-U Connection</a>
+      </h1>
+
+      <!-- Toggle untuk mobile (sidebar) -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </label>
+
+      <!-- Menu desktop -->
+      <ul class="nav-links">
+        <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+        <li><a href="fakulltas.html">Fakultas</a></li>
+        <li><a href="UKM.html">UKM</a></li>
+      </ul>
+
+      <!-- Search desktop -->
       <form action="search.html" method="GET" class="search-box">
         <input type="text" name="q" placeholder="Cari pertanyaan..." required>
         <button type="submit">
           <span class="material-symbols-outlined">search</span>
         </button>
       </form>
-  
-  <!-- Profile-->
+
+      <!-- Profile desktop -->
+      <ul>
+        <li class="dropdown">
+          <input type="checkbox" id="profile-toggle-desktop">
+          <label for="profile-toggle-desktop" class="drop-btn">
+            <span class="material-symbols-outlined">account_circle</span>
+          </label>
+          <ul class="dropdown-content">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Pengaturan</a></li>
+            <li><a href="#">Inbox</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="mobile-nav">
+        <ul class="nav-links">
+          <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+          <li><a href="fakulltas.html">Fakultas</a></li>
+          <li><a href="UKM.html">UKM</a></li>
+        </ul>
+
+        <form action="search.html" method="GET" class="search-box">
+          <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+          <button type="submit">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form>
+
         <ul>
           <li class="dropdown">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
-                account_circle
-              </span></label>
+            <label for="profile-toggle" class="drop-btn">
+              <span class="material-symbols-outlined">account_circle</span>
+            </label>
+            <input type="checkbox" id="profile-toggle">
             <ul class="dropdown-content">
               <li><a href="#">Profile</a></li>
               <li><a href="#">Pengaturan</a></li>
@@ -45,8 +84,9 @@
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <!-- MAIN CONTENT -->
   <main class="container-question">
