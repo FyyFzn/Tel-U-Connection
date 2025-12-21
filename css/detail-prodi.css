@@ -5,14 +5,14 @@ body {
 }
 
 /* Hero */
-#heroSection {
+.hero-section {
   position: relative;
   color: #ffffff;
   min-height: 180px;
   padding: 24px 0;
 }
 
-#heroImage {
+.hero-image {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -28,28 +28,28 @@ body {
   padding: 0 16px;
 }
 
-#namaFakultas {
+.nama-fakultas-text {
   font-size: 12px;
   opacity: 0.8;
   margin-bottom: 4px;
 }
 
-#namaProdi {
+.nama-prodi-text {
   font-size: 26px;
   margin: 4px 0;
 }
 
-#jenjangProdi {
+.jenjang-prodi-text {
   font-size: 16px;
   margin: 4px 0 8px 0;
 }
 
-#taglineProdi {
+.tagline-prodi-text {
   max-width: 600px;
   font-size: 14px;
 }
 
-#subscribeProdiBtn {
+.subscribe-prodi-btn {
   margin-top: 12px;
   padding: 8px 14px;
   font-size: 13px;
@@ -60,12 +60,12 @@ body {
   cursor: pointer;
 }
 
-#subscribeProdiBtn:hover {
+.subscribe-prodi-btn:hover {
   background-color: #f0f0f0;
 }
 
 /* Layout utama */
-main {
+.main-section {
   padding: 24px 0;
 }
 
@@ -118,9 +118,8 @@ main {
   margin: 4px 0;
 }
 
-
 /* Link website prodi */
-#websiteProdi {
+.website-prodi-link {
   color: #0056b3;
   cursor: pointer;
 }

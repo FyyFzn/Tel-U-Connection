@@ -87,13 +87,13 @@ const prodiData = {
       hero: "media/FIT.png"
     }
   ]
-  // jika nanti ada: informatika, feb, tinggal tambah key baru di sini
+  // nanti kalau ada fakultas lain (informatika, feb, dst) tinggal tambah key baru
 };
 
 function initDetailProdi() {
   const params = new URLSearchParams(window.location.search);
-  const fakultasId = params.get("fakultas"); // misal: fit, informatika, feb
-  const index = params.get("id");
+  const fakultasId = params.get("fakultas"); // contoh: fit
+  const index = params.get("id");            // contoh: 0, 1, 2
 
   const listProdi = prodiData[fakultasId] || [];
   const prodi = listProdi.find((p) => String(p.id) === String(index));
@@ -114,57 +114,82 @@ function initDetailProdi() {
     return;
   }
 
+  // Ambil elemen pakai class (querySelector)
+  const heroSection = document.querySelector(".hero-section");
+  const heroImg = document.querySelector(".hero-image");
+  const namaFakultasEl = document.querySelector(".nama-fakultas-text");
+  const namaProdiEl = document.querySelector(".nama-prodi-text");
+  const jenjangProdiEl = document.querySelector(".jenjang-prodi-text");
+  const taglineProdiEl = document.querySelector(".tagline-prodi-text");
+  const deskripsiProdiEl = document.querySelector(".deskripsi-prodi-text");
+  const visiProdiEl = document.querySelector(".visi-prodi-text");
+  const misiListEl = document.querySelector(".misi-prodi-list");
+  const prospekListEl = document.querySelector(".prospek-karir-list");
+  const jenjangSideEl = document.querySelector(".jenjang-prodi-side-text");
+  const gelarEl = document.querySelector(".gelar-prodi-text");
+  const akreditasiEl = document.querySelector(".akreditasi-prodi-text");
+  const durasiEl = document.querySelector(".durasi-prodi-text");
+  const emailEl = document.querySelector(".email-prodi-text");
+  const websiteEl = document.querySelector(".website-prodi-link");
+  const subscribeBtn = document.querySelector(".subscribe-prodi-btn");
+
   // Hero background
-  const heroSection = document.getElementById("heroSection");
   if (heroSection) {
     heroSection.style.backgroundImage =
       "linear-gradient(to right, #18a63a, #47c95a, #a6e86f)";
   }
 
-  const heroImg = document.getElementById("heroImage");
+  // Hero image
   if (heroImg && prodi.hero) {
     heroImg.src = prodi.hero;
   }
 
   // Teks utama
-  document.getElementById("namaProdi").textContent = prodi.nama;
-  document.getElementById("jenjangProdi").textContent = prodi.jenjang;
-  document.getElementById("taglineProdi").textContent = prodi.tagline;
-  document.getElementById("namaFakultas").textContent = prodi.fakultas;
+  if (namaFakultasEl) namaFakultasEl.textContent = prodi.fakultas;
+  if (namaProdiEl) namaProdiEl.textContent = prodi.nama;
+  if (jenjangProdiEl) jenjangProdiEl.textContent = prodi.jenjang;
+  if (taglineProdiEl) taglineProdiEl.textContent = prodi.tagline;
 
-  document.getElementById("deskripsiProdi").textContent = prodi.deskripsi;
-  document.getElementById("visiProdi").textContent = prodi.visi;
+  // Deskripsi, visi
+  if (deskripsiProdiEl) deskripsiProdiEl.textContent = prodi.deskripsi;
+  if (visiProdiEl) visiProdiEl.textContent = prodi.visi;
 
-  const misiList = document.getElementById("misiProdi");
-  prodi.misi.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    misiList.appendChild(li);
-  });
+  // Misi
+  if (misiListEl) {
+    misiListEl.innerHTML = "";
+    prodi.misi.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      misiListEl.appendChild(li);
+    });
+  }
 
-  const prospekList = document.getElementById("prospekKarir");
-  prodi.prospekKarir.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    prospekList.appendChild(li);
-  });
+  // Prospek karir
+  if (prospekListEl) {
+    prospekListEl.innerHTML = "";
+    prodi.prospekKarir.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      prospekListEl.appendChild(li);
+    });
+  }
 
   // Info singkat
-  document.getElementById("jenjangProdiSide").textContent = prodi.jenjang;
-  document.getElementById("gelarProdi").textContent = prodi.gelar;
-  document.getElementById("akreditasiProdi").textContent = prodi.akreditasi;
-  document.getElementById("durasiProdi").textContent = prodi.durasi;
+  if (jenjangSideEl) jenjangSideEl.textContent = prodi.jenjang;
+  if (gelarEl) gelarEl.textContent = prodi.gelar;
+  if (akreditasiEl) akreditasiEl.textContent = prodi.akreditasi;
+  if (durasiEl) durasiEl.textContent = prodi.durasi;
 
   // Kontak
-  document.getElementById("emailProdi").textContent = prodi.email;
-  const webEl = document.getElementById("websiteProdi");
-  webEl.textContent = prodi.website;
-  webEl.onclick = function () {
-    window.open(prodi.website, "_blank");
-  };
+  if (emailEl) emailEl.textContent = prodi.email;
+  if (websiteEl) {
+    websiteEl.textContent = prodi.website;
+    websiteEl.onclick = function () {
+      window.open(prodi.website, "_blank");
+    };
+  }
 
-  // Subscribe prodi (localStorage)
-  const subscribeBtn = document.getElementById("subscribeProdiBtn");
+  // Tombol subscribe prodi (localStorage)
   if (subscribeBtn) {
     subscribeBtn.addEventListener("click", function () {
       const key = "subscribedProdi";
