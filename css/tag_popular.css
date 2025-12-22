@@ -104,3 +104,82 @@
   font-size: 13px;
   color: #374151;
 }
+
+@media (max-width: 576px) {
+
+  /* MAIN CONTAINER */
+  .container {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  /* ASK BOX */
+  .ask-box {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .ask-box h2 {
+    font-size: 18px;
+  }
+
+  .ask-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ask-form input {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .ask-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* SECTION */
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  /* QUESTION GRID */
+  .question-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* CARD */
+  .card {
+    padding: 16px;
+  }
+
+  .card h4 {
+    font-size: 15px;
+  }
+
+  .desc {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  /* TAG */
+  .tags span {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  /* CARD FOOTER */
+  .card-footer {
+    font-size: 12px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* Hilangkan hover effect di mobile */
+  .card:hover {
+    transform: none;
+  }
+}
