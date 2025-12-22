@@ -11,32 +11,38 @@
 
 <body>
   <!-- Navbar -->
-  <header>
+    <header>
     <nav class="navbar">
       <div class="container">
-  <!--Logo-->
+        <!--Logo-->
         <h1 class="logo"><a href="homepage.html">Tel-U Connection</h1></a>
-  <!--Menu-->
+
+        <!-- Toggle untuk mobile -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="material-symbols-outlined">menu</span>
+        </label>
+        <!--Menu-->
         <ul class="nav-links">
           <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
           <li><a href="fakulltas.html">Fakultas</a></li>
           <li><a href="UKM.html">UKM</a></li>
         </ul>
         <!-- Search -->
-      <form action="search.html" method="GET" class="search-box">
-        <input type="text" name="q" placeholder="Cari pertanyaan..." required>
-        <button type="submit">
-          <span class="material-symbols-outlined">search</span>
-        </button>
-      </form>
-  
-  <!-- Profile-->
+        <form action="search.html" method="GET" class="search-box">
+          <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+          <button type="submit">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form>
+
+        <!-- Profile-->
         <ul>
           <li class="dropdown">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="drop-btn"><span class="material-symbols-outlined">
-                account_circle
-              </span></label>
+            <input type="checkbox" id="profile-toggle-desktop">
+            <label for="profile-toggle-desktop" class="drop-btn">
+              <span class="material-symbols-outlined">account_circle</span>
+            </label>
             <ul class="dropdown-content">
               <li><a href="#">Profile</a></li>
               <li><a href="#">Pengaturan</a></li>
@@ -44,6 +50,39 @@
             </ul>
           </li>
         </ul>
+
+
+
+        <!-- Sidebar mobile -->
+        <div class="mobile-nav">
+          <ul class="nav-links">
+            <li><a href="Tel-U Ask.html">Tel-U Ask</a></li>
+            <li><a href="fakulltas.html">Fakultas</a></li>
+            <li><a href="UKM.html">UKM</a></li>
+          </ul>
+
+          <form action="search.html" method="GET" class="search-box">
+            <input type="text" name="q" placeholder="Cari pertanyaan..." required>
+            <button type="submit">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </form>
+
+          <ul>
+            <li class="dropdown">
+              <label for="profile-toggle" class="drop-btn">
+                <span class="material-symbols-outlined">account_circle</span>
+              </label>
+              <input type="checkbox" id="profile-toggle">
+              <ul class="dropdown-content">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Pengaturan</a></li>
+                <li><a href="#">Inbox</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </header>
@@ -51,18 +90,9 @@
   <!-- MAIN CONTENT -->
   <main class="container">
 
-    <!-- AJUKAN PERTANYAAN -->
-    <section class="ask-box">
-      <h2>Ajukan Pertanyaan Baru</h2>
-      <div class="ask-form">
-        <input type="text" placeholder="Ketik pertanyaan Anda untuk mendapatkan jawaban dari komunitas...">
-        <button>Kirim Pertanyaan</button>
-      </div>
-    </section>
-
     <!-- PERTANYAAN -->
     <section>
-      <h2 class="section-title">Pertanyaan Terbaru</h2>
+      <h2 class="section-title">Pertanyaan Terkait #Kehidupan Kampus</h2>
 
       <div class="question-grid">
 
@@ -71,7 +101,7 @@
           <p class="desc">Saya sering kesulitan membagi waktu antara jadwal perkuliahan, tugas, dan kegiatan organisasi.
                           Strategi apa yang biasanya efektif digunakan mahasiswa?</p>
           <div class="tags">
-            <span>#Perkuliahan</p></span>
+            <span>#KehidupanKampus</p></span>
             <span>#Organisasi</span>
           </div>
           <div class="card-footer">
@@ -86,7 +116,7 @@
                           Apa saja persiapan penting yang sebaiknya dilakukan sejak awal kuliah?</p>
           <div class="tags">
             <span>#Beasiswa</span>
-            <span>#TipsMahasiswa</span>
+            <span>#KehidupanKampus</span>
           </div>
           <div class="card-footer">
             <span>Bunga Lestari</span>

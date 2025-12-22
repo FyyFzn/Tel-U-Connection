@@ -132,6 +132,11 @@
   font-size: 0.9em;
 }
 
+.tags span a {
+  color: #8B0000;
+  text-decoration: none;
+}
+
 /* Footer */
 footer {
   background: #8B0000;
