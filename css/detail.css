@@ -150,3 +150,108 @@ max-width: 900px;
   color: #555;
   margin-top: 5px;
 }
+
+@media (max-width: 576px) {
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  /* QUESTION DETAIL */
+  .question-detail {
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+
+  .question-detail h1 {
+    font-size: 18px;
+  }
+
+  .author {
+    gap: 10px;
+    margin: 12px 0;
+  }
+
+  .author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .question-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .tags span {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+  }
+
+  .question-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .question-actions p {
+    font-size: 13px;
+  }
+
+  .btn-group button {
+    font-size: 13px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  /* ANSWER FORM */
+  .answer-form {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+
+  .answer-form textarea {
+    height: 90px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* ANSWERS */
+  .answers {
+    padding: 18px;
+  }
+
+  .answers h2 {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+
+  .answer {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .answer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .answer p {
+    margin: 6px 0;
+  }
+
+  .answer .text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .answer .votes {
+    font-size: 12px;
+  }
+}

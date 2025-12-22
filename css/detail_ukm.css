@@ -111,3 +111,37 @@
   border-radius: 6px;
   font-size: 14px;
 }
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .hero {
+    gap: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .hero-image img {
+    height: 180px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .activity img {
+    height: 180px;
+  }
+}
